@@ -11,5 +11,4 @@ Verify Page Loaded
 
 Validate Page Contents
     ${ElementText} =  Get Text  ${TEAM_HEADER_LABEL}
-    Should Be Equal as Strings  ${ElementText}  Our Amazing Team  ignore_case=true
-    Element Text Should Be  ${TEAM_HEADER_LABEL}  ${TEAM_HEADER_TEXT}
+    Should Be Equal As Strings  ${ElementText}  Our Amazing Team  ignore_case=True
