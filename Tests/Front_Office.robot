@@ -15,13 +15,19 @@ ${MAIN_URL} =  http://www.robotframeworktutorial.com/front-office/
 User can open the main page
     [Documentation]  User can open the main page
     [Tags]  Smoke
-    Go To  ${MAIN_URL}
-    Log  User can see the main page
-    Sleep  2s
+    FrontOfficeKey.Go to Landing Page
 
-User can see the main page
+User can open the "Team" page
     [Documentation]  User can open the main page
     [Tags]  Smoke
-    Go To  ${MAIN_URL}
-    Log  User can see the main page again
-    Sleep  2s
+    FrontOfficeKey.Go to Landing Page
+    FrontOfficeKey.Go to Team Page
+
+"Team" page should match requirements
+    [Documentation]  User can open the main page
+    [Tags]  Smoke
+    FrontOfficeKey.Go to Landing Page
+    FrontOfficeKey.Go to Team Page
+    FrontOfficeKey.Validate Team Page
+
+
