@@ -1,19 +1,19 @@
 *** Settings ***
-Resource  ./PO/Landing.robot
-Resource  ./PO/Team.robot
-Resource  ./PO/TopNav.robot
+Resource  ./PO/FrontOffice.Landing.robot
+Resource  ./PO/FrontOffice.Team.robot
+Resource  ./PO/FrontOffice.TopNav.robot
 
 *** Variables ***
 
 
 *** Keywords ***
 Go to Landing Page
-    Landing.Navigate To Page
-    Landing.Verify Page Loaded
+    FrontOffice.Landing.Navigate To Page
+    FrontOffice.Landing.Verify Page Loaded
 
 Go to Team Page
-    TopNav.Select Team Page
-    Team.Verify Page Loaded
+    FrontOffice.TopNav.Select Team Page
+    FrontOffice.Team.Verify Page Loaded
 
 Validate Team Page
-    Team.Validate Page Contents
+    FrontOffice.Team.Validate Page Contents

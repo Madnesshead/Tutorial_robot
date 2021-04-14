@@ -1,11 +1,11 @@
 *** Settings ***
-Resource  ./PO/Landing.robot
-Resource  ./PO/TopNav.robot
+Resource  ./PO/BackOffice.Landing.robot
+Resource  ./PO/BackOffice.TopNav.robot
 
 *** Variables ***
 
 
 *** Keywords ***
 Go to Landing Page
-    Landing.Navigate To Page
-    Landing.Verify Page Loaded
+    BackOffice.Landing.Navigate To Page
+    BackOffice.Landing.Verify Page Loaded
