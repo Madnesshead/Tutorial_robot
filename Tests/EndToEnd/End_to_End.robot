@@ -10,8 +10,8 @@ Test Teardown  End Web Test
 
 *** Variables ***
 ${BROWSER} =  chrome
-${MAIN_URL} =  http://www.robotframeworktutorial.com/front-office/
-${MAIN_URL} =  http://www.robotframeworktutorial.com/back-office/
+${FRONT_OFFICE_URL} =  http://www.robotframeworktutorial.com/front-office/
+${BACK_OFFICE_URL} =  http://www.robotframeworktutorial.com/back-office/
 
 *** Test Cases ***
 User can open both sites
