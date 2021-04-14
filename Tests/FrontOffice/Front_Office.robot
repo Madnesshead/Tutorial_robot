@@ -1,11 +1,11 @@
 *** Settings ***
 Documentation  Simple test cases for checking the main page of web site
-Resource  ../Resources/FrontOfficeKey.robot
-Resource  ../Resources/CommonWeb.robot
+Resource  ../../Resources/FrontOffice/FrontOfficeKey.robot
+Resource  ../../Resources/Common/CommonWeb.robot
 Test Setup  Start Web Test
 Test Teardown  End Web Test
 
-#robot -d results tests/Front_Office.robot
+#robot -d results tests/FrontOffice/Front_Office.robot
 
 *** Variables ***
 ${BROWSER} =  chrome
